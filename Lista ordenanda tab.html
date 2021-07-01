@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Ordenada</title>
+</head>
+<style>
+    .pilsen {
+        background-color: gold;
+        color: black;
+        border: black;
+        margin: 20px;
+        padding: 20px;
+        width: 20%;
+    }
+
+    .ipa {
+        background-color: brown;
+        color: black;
+        border: black;
+        margin: 20px;
+        padding: 20px;
+        width: 20%;
+    }
+
+    .dunkel {
+        background-color: rgb(202, 189, 114);
+        color: rgb(14, 1, 1);
+        border: black;
+        margin: 20px;
+        padding: 20px;
+        width: 20%;
+
+    }
+
+    .dunkel:hover {
+        background-color: rgb(235, 230, 202);
+    }
+
+    .pilsen:hover {
+        background-color: rgb(235, 230, 202);
+
+    }
+
+    .ipa:hover {
+        background-color: rgb(235, 230, 202);
+    }
+</style>
+
+<body>
+    <script>
+        function myFunction() {
+            alert("Enjoy your beer")
+        }
+    </script>
+
+    <div class="container">
+
+        <h3>Classificação Geral</h3>
+        <ol onclick="myFunction()">
+            <div class="pilsen">
+                <li>Pilsen</li>
+            </div>
+            <div class="ipa">
+                <li>IPA</li>
+            </div>
+            <div class="dunkel">
+                <li>Dunkel</li>
+            </div>
+        </ol>
+    </div>
+</body>
+
+</html>
