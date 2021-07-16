@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria</title>
+</head>
+
+<body>
+
+    <style>
+        p#enjoy {
+            font-weight: bold;
+        }
+    </style>
+
+    <thead>
+        <h3>Sobre a Livraria</h3>
+    </thead>
+    <th>
+        <h3>Livros</h3>
+    </th>
+
+
+
+
+
+    <ol type="1" id="ol">
+        <li onclick="displayBaCMessage()">Arte</a></li>
+        <li onclick="displayRiceMessage()">Design</a></li>
+        <li onclick="displayRiceMessage()">Técnicos > CSS > AutoCAD</a></li>
+    </ol>
+    <script>
+        let message = ''
+        function displayBaCMessage() {
+            document.getElementById("enjoy").innerHTML = message + 'oooooo'
+
+        }
+        function displayRiceMessage() {
+            document.getElementById("enjoy").innerHTML = message + 'aaaaaa'
+        }
+        function displayBeensMessage() {
+            document.getElementById("enjoy").innerHTML = message + 'Beens'
+        }
+    </script>
+    <p id="enjoy"></p>
+
+</body>
+
+
+</html>

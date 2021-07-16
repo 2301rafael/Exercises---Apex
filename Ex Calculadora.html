@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     Crie um formulario, onde o usuario ira informar dois valores e uma operação de soma, subtração,
     multiplcação ou divisão.
@@ -16,24 +18,24 @@
     multiplcação - Havera dois parametros que retornara a multiplcação dos valores <br>
     Divisão - Haverá dois parametros que retornara a divisão dos valores <br> <br>
 
-     
+
 
     <script>
-        function sum(num1, num2){
+        function sum(num1, num2) {
             return num1 + num2
         }
-        function subtract(num1, num2){
+        function subtract(num1, num2) {
             return num1 - num2
         }
-        function divide(num1, num2){
+        function divide(num1, num2) {
             return num1 / num2
         }
-        function multiply(num1, num2){
+        function multiply(num1, num2) {
             return num1 * num2
         }
 
-        function resolve(num1, num2, operation){
-            switch (operation){
+        function resolve(num1, num2, operation) {
+            switch (operation) {
                 case "sum":
                     alert(sum(num1, num2))
                     break
@@ -51,19 +53,20 @@
                     break
             }
         }
-            function calcula() {
+        function calcula() {
 
-                var firstValue = parseInt(document.getElementById('first-value').value)
-                var secondValue = parseInt(document.getElementById('second-value').value)
-                var operation = document.getElementById('operation').value
-                resolve(firstValue, secondValue, operation)
-            }
-        
-        </script>
-        <input type="text" placeholder="value" id="first-value" />
-        <input type="text" placeholder="value" id="second-value" />
-        <input type="text" placeholder="sum, sub, mult or div" id="operation" />
-        <input type= "button" value="calcular" onClick="calcula()" />
-    
+            var firstValue = parseInt(document.getElementById('first-value').value)
+            var secondValue = parseInt(document.getElementById('second-value').value)
+            var operation = document.getElementById('operation').value
+            resolve(firstValue, secondValue, operation)
+        }
+
+    </script>
+    <input type="text" placeholder="value" id="first-value" />
+    <input type="text" placeholder="value" id="second-value" />
+    <input type="text" placeholder="sum, sub, mult or div" id="operation" />
+    <input type="button" value="calcular" onClick="calcula()" />
+
 </body>
+
 </html>

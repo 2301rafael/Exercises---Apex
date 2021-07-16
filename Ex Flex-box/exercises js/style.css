@@ -1,0 +1,17 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#children {
+width: 200px;
+height: 100px;
+background-color: black;
+border: solid white;
+
+
+}

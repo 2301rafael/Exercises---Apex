@@ -1,0 +1,29 @@
+
+    div {
+        border: solid black;
+        margin: 20px;
+        padding: 20px;
+        width: 5%;
+        box-shadow: green 5px 5px 5px;
+    }
+
+    .first {
+        margin-top: 30px;
+
+    }
+
+    .second {
+        margin-top: 80px;
+        margin-left: 350px;
+    }
+
+    .third {
+        margin-top: 160px;
+        margin-left: 700px;
+    }
+
+    .intern {
+        padding: 10px;
+        background-color: green;
+
+    }

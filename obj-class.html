@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obj-class</title>
+</head>
+<style>
+    p {
+        font: italic bold 12px/14px verdana, sans-serif
+    }
+</style>
+
+<body>
+
+    <p>Faça um algoritmo que pegue o nome, idade e caracteristica de uma pessoa,
+        armazene em um objeto e depois escreva na tela Bem vindo {nome da pessoa} fiquei sabendo que você é
+        {caracteristica} e que sua idade é {idade} anos</p> <br><br>
+
+
+    <input type="text" id="name" placeholder="name" />
+    <input type="text" id="caracteristica" placeholder="caracteristica" />
+    <input type="text" id="idade" placeholder="idade" />
+    <input type="button" id="submit" value="button" onclick="catchElements()" />
+
+
+    <script>
+
+        function catchElements() {
+            let elementName = document.getElementById('name').value
+            let elementCaracteristica = document.getElementById('caracteristica').value
+            let elementIdade = document.getElementById('idade').value
+            let pessoa = {
+                nome: elementName, caracteristica: elementCaracteristica, idade: elementIdade
+            }
+            document.write(`Bem vindo ${pessoa.nome} fiquei sabendo que você é ${pessoa.caracteristica} e que sua idade é ${pessoa.idade} anos`)
+        }
+
+
+    </script>
+
+</body>
+
+</html>

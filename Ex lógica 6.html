@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let day = window.prompt('day')
+        let month = window.prompt('month')
+        let year = window.prompt ('year')
+        const minDay = 1
+        const maxDay = 31
+        const minMonth = 1
+        const maxMonth = 12
+        const maxYear = 2019
+        const minYear = maxYear - 143
+        
+
+        if (day < minDay){
+            document.write('it is not a valid date')
+        } else if (day > maxDay){
+            document.write('it is not a valid date')
+        } else if (month < minMonth){
+            document.write('it is not a valid date')
+        } else if (month > maxMonth){
+            document.write('it is not a valid date')
+        } else if (year < minYear){
+              document.write('it is not a valid date')
+        } else if (year > maxYear){
+            document.write('it is not a valid date')
+        } else {
+            document.write(day + '  ' + month + '  ' + year)
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
